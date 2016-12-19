@@ -15,6 +15,10 @@ __copyright__ = ('Copyright 2012, Australia Indonesia Facility for '
                  'Disaster Reduction')
 import unittest
 import os
+from qgis.PyQt.QtCore import (
+    QTranslator,
+    QCoreApplication
+)
 
 
 class SafeTranslationsTest(unittest.TestCase):

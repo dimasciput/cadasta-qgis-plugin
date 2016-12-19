@@ -10,14 +10,16 @@ from cadasta.api.login import Login
 from cadasta.test.utilities import get_qgis_app
 from qgis.PyQt.QtCore import QCoreApplication
 
+QGIS_APP = get_qgis_app()
+
 
 class LoginTest(unittest.TestCase):
     """Test dialog works."""
 
     def setUp(self):
         """Runs before each test."""
-        self.username = 'irwan.kartoza'
-        self.password = 'Irwankartoza1!'
+        self.username = 'kartoza.demo'
+        self.password = 'demo.kartoza1!'
 
     def tearDown(self):
         """Runs after each test."""
