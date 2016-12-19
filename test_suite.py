@@ -15,7 +15,6 @@ import sys
 import os
 import unittest
 from osgeo import gdal
-from PyQt4 import Qt
 from qgis.core import QGis
 
 __author__ = 'etiennetrimaille'
@@ -32,7 +31,6 @@ def _run_tests(test_suite, package_name):
     print '%s tests has been discovered in %s' % (count, package_name)
     print 'QGIS : %s' % unicode(QGis.QGIS_VERSION_INT)
     print 'Python GDAL : %s' % gdal.VersionInfo('VERSION_NUM')
-    print 'QT : %s' % Qt.QT_VERSION
     print 'Run slow tests : %s' % (not os.environ.get('ON_TRAVIS', False))
     print '########'
     unittest.TextTestRunner(verbosity=3, stream=sys.stdout).run(test_suite)

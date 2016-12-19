@@ -29,7 +29,7 @@ class LoginTest(unittest.TestCase):
         self.dialog = None
 
     def test_login(self):
-        """Test we can click OK."""
+        """Test we can login."""
         login = Login(self.username, self.password)
         # Wait until it finished
         while not login.reply.isFinished():
