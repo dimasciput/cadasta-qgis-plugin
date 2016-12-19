@@ -11,11 +11,6 @@ from cadasta.test.utilities import get_qgis_app
 from qgis.PyQt.QtCore import QCoreApplication
 
 
-QGIS_APP, CANVAS, IFACE, PARENT = get_qgis_app()
-
-LOGGER = logging.getLogger('CadastaQGISPlugin')
-
-
 class LoginTest(unittest.TestCase):
     """Test dialog works."""
 
